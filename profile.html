@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <title> Profile </title>
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+      <!-- Font Awesome icons -->
+      <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/profile.css">
+   </head>
+   <body>
+
+<!-- Navigation -->
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/navbar-logo.png" alt="..." />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <!-- Link to Services section in dummyindex.html -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    
+                    <!-- Link to Profile page -->
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+                    
+                    <!-- Link to Testimonials section in dummyindex.html -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                    
+                    <!-- Link to Creator section in dummyindex.html -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#creator">Creator</a></li>
+                    
+                    <!-- Link to Contact section in dummyindex.html -->
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+      <!-- Profile Section -->
+      <section class="page-section bg-light" id="portfolio">
+         <div class="container">
+            <div class="text-center">
+               <h2 class="section-heading text-uppercase"> <strong> Showcasing Our Scholars' Journey !! </strong> </h2>
+               <h3 class="section-subheading text-muted"> The Stories Behind Success. </h3>
+            </div>
+            <div class="row">
+
+<section>
+   <!-- Main Container -->
+  <div class="main-container">
+    <div class="create-profile-container">
+      <button class="create-profile-button">Create Profile</button>
+    </div>
+
+   <!-- Scholar Form Popup -->
+<div id="scholarFormPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-popup">&times;</span>
+    <form id="scholarForm">
+      <h2>Create Scholar Profile</h2>
+
+      <!-- Upload Photo -->
+      <fieldset>
+        <legend>Upload Photo</legend>
+        <label for="profileImage">Photo (500x500 pixels):</label>
+        <input type="file" id="profileImage" name="profileImage" accept="image/*" required>
+      </fieldset>
+
+      <!-- Personal Details -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="program">Program of Study:</label>
+        <input type="text" id="program" name="program" required>
+
+        <label for="faculty">Faculty & Campus:</label>
+        <input type="text" id="faculty" name="faculty" required>
+
+        <label for="year">Year of Study:</label>
+        <input type="text" id="year" name="year" required>
+      </fieldset>
+
+      <!-- Academic Information -->
+      <fieldset>
+        <legend>Academic Information</legend>
+        <label for="cgpa">CGPA:</label>
+        <input type="text" id="cgpa" name="cgpa" required>
+
+        <label for="achievements">Achievements:</label>
+        <input type="text" id="achievements" name="achievements">
+
+        <label for="research">Research:</label>
+        <input type="text" id="research" name="research">
+      </fieldset>
+
+      <!-- Co-Curricular and Leadership -->
+      <fieldset>
+        <legend>Co-Curricular and Leadership</legend>
+        <label for="clubs">Clubs:</label>
+        <input type="text" id="clubs" name="clubs">
+
+        <label for="participation">Student Participation:</label>
+        <input type="text" id="participation" name="participation">
+      </fieldset>
+
+      <!-- Contact Information -->
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+</div>
+
+</section>
+               
+<!-- Portfolio & Modal Item -->
+               <!-- Portfolio Item  1 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Saifuddin.jpg" alt="Saifuddin" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading"> Saifuddin </div>
+                     <div class="portfolio-caption-subheading text-muted"> CDIM263 Student </div>
+                  </div>
+               </div>
+               <!-- Modal Item  1 -->
+               <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal">
+                           <img src="assets/img/close-icon.png" alt="Close modal" />
+                        </div>
+                        <div class="modal-body">
+                           <h2 class="text-uppercase"> Scholar Profile 1 </h2>
+                           <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                           <img class="img-fluid d-block mx-auto" src= "assets/img/Saifuddin.jpg" alt="Saifuddin" />
+                           <!-- Personal Details -->
+                           <h4>Personal Details</h4>
+                           <ul class="list-inline">
+                              <li><strong>Full Name:</strong> Ahmad Saifuddin Bin Hamdan </li>
+                              <li><strong>Student ID:</strong> 2024741245 </li>
+                              <li><strong>Program of Study:</strong> Bachelor of Information Science (Hons) Information Content Management (CDIM263) </li>
+                              <li><strong>Faculty & Campus:</strong> College of Computing, Informatics and Mathematics Studies, Campus Puncak Perdana </li>
+                              <li><strong>Year of Study:</strong> 20242 </li>
+                           </ul>
+                           <!-- Academic Information -->
+                           <h4>Academic Information</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>CGPA:</strong> 3.83 </li>
+                              <li><strong>Achievements:</strong> Dean's List (3 Semesters)</li>
+                              <li><strong>Research:</strong> n/a </li>
+                           </ul>
+                           <!-- Co-Curricular and Leadership -->
+                           <h4>Co-Curricular and Leadership</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>Clubs:</strong> Member & Exco, Information System Management Association (IMSA) with Welfare EXCO </li>
+                              <li><strong> Student Participation: </strong> Member of the Inter-Program Sports Authority (Supro), IMSA </li>
+                           </ul>
+                           <!-- Contact Information -->
+                           <h4>Contact Information</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>Email:</strong> 2024741245@student.uitm.edu.my</li>
+                           </ul>
+                           <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                           <i class="fas fa-times"></i> Close Project
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Portfolio Item 2 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Syahmina.jpg" alt="Syahmina" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Syahmina</div>
+                     <div class="portfolio-caption-subheading text-muted">CDIM263 Student</div>
+                  </div>
+               </div>
+               <!-- Modal Item 2 -->
+               <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal">
+                           <img src="assets/img/close-icon.png" alt="Close modal" />
+                        </div>
+                        <div class="modal-body">
+                           <h2 class="text-uppercase"> Scholar Profile 2 </h2>
+                           <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                           <img class="img-fluid d-block mx-auto" src="assets/img/Syahmina.jpg" alt="Syahmina" />
+                           <!-- Personal Details -->
+                           <h4>Personal Details</h4>
+                           <ul class="list-inline">
+                              <li><strong>Full Name:</strong> Nur Umairah Syahmina Binti Muhd Zurairi </li>
+                              <li><strong>Student ID:</strong> 2024755239 </li>
+                              <li><strong>Program of Study:</strong> Bachelor of Information Science (Hons) Information Content Management (CDIM263) </li>
+                              <li><strong>Faculty & Campus:</strong> College of Computing, Informatics and Mathematics Studies, Campus Puncak Perdana 
+                              <li>
+                              <li><strong>Year of Study:</strong> 20242 </li>
+                           </ul>
+                           <!-- Academic Information -->
+                           <h4>Academic Information</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>CGPA:</strong> 3.85 </li>
+                              <li><strong>Achievements:</strong> Dean's List (4 Semesters)</li>
+                              <li><strong>Research:</strong> n/a </li>
+                           </ul>
+                           <!-- Co-Curricular and Leadership -->
+                           <h4>Co-Curricular and Leadership</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>Clubs:</strong> IMSA Club Welfare EXCO </li>
+                              <li><strong> Student Participation: </strong> Member of the Inter-Program Sports Authority (Supro), IMSA </li>
+                           </ul>
+                           <!-- Contact Information -->
+                           <h4>Contact Information</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>Email:</strong> 2024755239@student.uitm.edu.my</li>
+                           </ul>
+                           <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                           <i class="fas fa-times"></i> Close Project
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Portfolio Item 3 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Muqrish.jpg" alt="Muqrish" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading"> Muqrish </div>
+                     <div class="portfolio-caption-subheading text-muted">BA272 Student</div>
+                  </div>
+               </div>
+               <!-- Modal Item 3 -->
+               <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal">
+                           <img src="assets/img/close-icon.png" alt="Close modal" />
+                        </div>
+                        <div class="modal-body">
+                           <h2 class="text-uppercase"> Scholar Profile 3 </h2>
+                           <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                           <img class="img-fluid d-block mx-auto" src="assets/img/Muqrish.jpg" alt="Muqrish" />
+                           <!-- Personal Details -->
+                           <h4>Personal Details</h4>
+                           <ul class="list-inline">
+                              <li><strong>Full Name:</strong> Muhammad Adam Muqrish Bin Mohd Khairul Anuar</li>
+                              <li><strong>Student ID:</strong> 2024786371 </li>
+                              <li><strong>Program of Study:</strong> Bachelor of Business In Finance (BA272) </li>
+                              <li><strong>Faculty & Campus:</strong> Faculty of Business Management, Campus Puncak Alam </li>
+                              <li><strong>Year of Study:</strong> 20242</li>
+                           </ul>
+                           <!-- Academic Information -->
+                           <h4>Academic Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>CGPA:</strong> 3.80 </li>
+                              <li><strong>Achievements:</strong> Dean's List (5 Semesters) </li>
+                              <li><strong>Research:</strong> n/a </li>
+                           </ul>
+                           <!-- Co-Curricular and Leadership -->
+                           <h4>Co-Curricular and Leadership</h4>
+                           <ul class="list-inline">
+                              <li><strong>Clubs:</strong> UiTM Football Club </li>
+                              <li><strong>Student Participation:</strong> Deputy director of the "Football for all" project </li>
+                           </ul>
+                           <!-- Contact Information -->
+                           <h4>Contact Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>Email:</strong> 2024786371@student.uitm.edu.my </li>
+                           </ul>
+                           <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                           <i class="fas fa-times"></i> Close Project
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Portfolio Item 4 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Amin.jpg" alt="Amin" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Amin</div>
+                     <div class="portfolio-caption-subheading text-muted">CDIM262 Student</div>
+                  </div>
+               </div>
+               <!-- Modal Item 4 -->
+               <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal">
+                           <img src="assets/img/close-icon.png" alt="Close modal" />
+                        </div>
+                        <div class="modal-body">
+                           <h2 class="text-uppercase"> Scholar Profile 4 </h2>
+                           <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                           <img class="img-fluid d-block mx-auto" src="assets/img/Amin.jpg" alt="Amin" />
+                           <!-- Personal Details -->
+                           <h4>Personal Details</h4>
+                           <ul class="list-inline">
+                              <li><strong>Full Name:</strong> Nuramin Hakimi Bin Ramli </li>
+                              <li><strong>Student ID:</strong> 2024938739 
+                              <li>
+                              <li><strong>Program of Study:</strong> Bachelor of Information Science (Hons) Information Systems Management (CDIM262) </li>
+                              <li><strong>Faculty & Campus:</strong> College of Computing, Informatics and Mathematics Studies, Campus Puncak Perdana  </li>
+                              <li><strong>Year of Study:</strong> 20242 </li>
+                           </ul>
+                           <!-- Academic Information -->
+                           <h4>Academic Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>CGPA:</strong> 3.35 </li>
+                              <li><strong>Achievements:</strong> Active Member of IMSA Art Crew (IAC) </li>
+                              <li><strong>Research:</strong> n/a </li>
+                           </ul>
+                           <!-- Co-Curricular and Leadership -->
+                           <h4>Co-Curricular and Leadership</strong> </h4>
+                           <ul class="list-inline">
+                              <li><strong>Clubs:</strong> IMSA Art Crew (IAC)</li>
+                              <li><strong> Student Participation: </strong> Main dancers in events organized by IMSA such as Majis Dan Issnite </li>
+                           </ul>
+                           <!-- Contact Information -->
+                           <h4>Contact Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>Email:</strong> 2024938739@student.uitm.edu.my</li>
+                           </ul>
+                           <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                           <i class="fas fa-times"></i> Close Project
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Portfolio Item 5 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Imran.jpg" alt="Imran" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Imran</div>
+                     <div class="portfolio-caption-subheading text-muted">CDIM262 Student</div>
+                  </div>
+               </div>
+               <!-- ModalItem 5 -->
+               <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal">
+                           <img src="assets/img/close-icon.png" alt="Close modal" />
+                        </div>
+                        <div class="modal-body">
+                           <h2 class="text-uppercase"> Scholar Profile 5 </h2>
+                           <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                           <img class="img-fluid d-block mx-auto" src="assets/img/Imran.jpg" alt="Imran" />
+                           <!-- Personal Details -->
+                           <h4>Personal Details</h4>
+                           <ul class="list-inline">
+                              <li><strong>Full Name:</strong> Muhammad Zuhri Imran bin Mohd Azhan </li>
+                              <li><strong>Student ID:</strong> 2024794189 </li>
+                              <li><strong>Program of Study:</strong> Bachelor of Information Science (Hons) Information Systems Management (CDIM262) </li>
+                              <li><strong>Faculty & Campus:</strong> College of Computing, Informatics and Mathematics Studies, Campus Puncak Perdana</li>
+                              <li><strong>Year of Study:</strong> 20242 </li>
+                           </ul>
+                           <!-- Academic Information -->
+                           <h4>Academic Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>CGPA:</strong> 3.70</li>
+                              <li><strong>Achievements:</strong> Dean List (2 Semester) </li>
+                              <li><strong>Research:</strong> n/a </li>
+                           </ul>
+                           <!-- Co-Curricular and Leadership -->
+                           <h4>Co-Curricular and Leadership</h4>
+                           <ul class="list-inline">
+                              <li><strong>Clubs:</strong> Member & Exco, Information System Management Association (IMSA) with Public Relations and Special Duties Exco </li>
+                              <li><strong>Student Participation: </strong> Member of the Authority (Registration) at Majlis Apresiasi Siswa (Majis) </li>
+                           </ul>
+                           <!-- Contact Information -->
+                           <h4>Contact Information</h4>
+                           <ul class="list-inline">
+                              <li><strong>Email:</strong> 2024794189@student.uitm.edu.my</li>
+                           </ul>
+                           <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                           <i class="fas fa-times"></i> Close Project
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Portfolio Item 6 -->
+               <div class="col-lg-4 col-sm-6 mb-4 portfolio-item">
+                  <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                     <div class="portfolio-hover">
+                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                     </div>
+                     <img class="img-fluid" src="assets/img/Ariff.jpg" alt="Ariff" />
+                  </a>
+                  <div class="portfolio-caption">
+                     <div class="portfolio-caption-heading">Ariff </div>
+                     <div class="portfolio-caption-subheading text-muted">CDIM262 Student</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Modal Item 6 -->
+         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+               <div class="modal-content">
+                  <div class="close-modal" data-bs-dismiss="modal">
+                     <img src="assets/img/close-icon.png" alt="Close button" />
+                  </div>
+                  <div class="modal-body">
+                     <h2 class="text-uppercase"> Scholar Profile 6 </h2>
+                     <p class="item-intro text-muted"> Aspiring UiTM scholar. </p>
+                     <img class="img-fluid d-block mx-auto" src="assets/img/Ariff.jpg" alt="Ariff" />
+                     <!-- Personal Details -->
+                     <h4>Personal Details</h4>
+                     <ul class="list-inline">
+                        <li><strong>Full Name:</strong> Nadia Amir</li>
+                        <li><strong>Student ID:</strong> 2023901234</li>
+                        <li><strong>Program of Study:</strong> Bachelor of Architecture</li>
+                        <li><strong>Faculty & Campus:</strong> Faculty of Architecture, UiTM Perak</li>
+                        <li><strong>Year of Study:</strong> Final Year</li>
+                     </ul>
+                     <!-- Academic Information -->
+                     <h4>Academic Information</h4>
+                     <ul class="list-inline">
+                        <li><strong>CGPA:</strong> 3.85</li>
+                        <li><strong>Achievements:</strong> UiTM Best Design Award</li>
+                        <li><strong>Research:</strong> "Sustainable Urban Housing Solutions"</li>
+                     </ul>
+                     <!-- Co-Curricular and Leadership -->
+                     <h4>Co-Curricular and Leadership</h4>
+                     <ul class="list-inline">
+                        <li><strong>Clubs:</strong> Secretary, Architecture Club</li>
+                        <li><strong>Volunteer Work:</strong> Urban beautification projects</li>
+                     </ul>
+                     <!-- Professional Development -->
+                     <h4>Professional Development</h4>
+                     <ul class="list-inline">
+                        <li><strong>Skills:</strong> SketchUp, Urban Design, Project Planning</li>
+                        <li><strong>Certifications:</strong> Certified Green Building Architect</li>
+                        <li><strong>Internship:</strong> Internship at ArkiDesign Studio</li>
+                     </ul>
+                     <!-- Contact Information -->
+                     <h4>Contact Information</h4>
+                     <ul class="list-inline">
+                        <li><strong>Email:</strong> nadia.amir@uitm.edu.my</li>
+                        <li><strong>Portfolio:</strong> <a href="https://nadiaarchitects.com" target="_blank">nadiaarchitects.com</a></li>
+                     </ul>
+                     <button class="btn btn-primary" data-bs-dismiss="modal" type="button">
+                     <i class="fas fa-times"></i> Close Project
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+         </div>
+      </section>
+      <!-- Footer-->
+<footer class="footer py-4">
+   <div class="container">
+      <div class="row align-items-center">
+         <!-- Left Side: Copyright -->
+         <div class="col-lg-4 text-lg-start">
+            Copyright &copy; UiTM Scholar Profile 2025
+         </div>
+         <!-- Center: Social Buttons -->
+         <div class="col-lg-4 d-flex">
+   <div class="social-buttons">
+      <a class="btn btn-dark btn-social" href="https://x.com/uitmofficial" aria-label="Twitter">
+         <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-dark btn-social" href="https://www.facebook.com/uitmrasmi/?locale=ms_MY" aria-label="Facebook">
+         <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn btn-dark btn-social" href="https://www.instagram.com/uitm.official/?hl=en" aria-label="Instagram">
+         <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn btn-dark btn-social" href="https://www.youtube.com/channel/UCjIWjQSyTuVDD-GHPYcg7Pw" aria-label="YouTube">
+         <i class="fab fa-youtube"></i>
+      </a>
+   </div>
+</div>
+         <!-- Right Side: Links -->
+            <div class="col-lg-4 text-lg-end link-stack">
+            <a class="link-dark text-decoration-none" href="https://uitm.edu.my/index.php/en/privacy-statement" target="_blank">Privacy Policy</a>
+            <a class="link-dark text-decoration-none" href="https://ppii.uitm.edu.my//images/pekeliling/universiti/Dasar/DasarKeselamatanICTv2.pdf" target="_blank">ICT Security Policy</a>
+            <a class="link-dark text-decoration-none" href="https://uitm.edu.my/index.php/en/disclaimer-copyright" target="_blank">Disclaimer & Copyright</a>
+            </div>
+
+      </div>
+   </div>
+</footer>
+
+         <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+   </body>
+</html>

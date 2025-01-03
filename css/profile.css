@@ -1,0 +1,496 @@
+/* General styling for HTML and Body */
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Paragraph styling for readability */
+p {
+  line-height: 1.75;
+}
+
+/* Section Padding */
+.page-section {
+  padding: 6rem 0;
+}
+
+/* Section Heading */
+.page-section h2.section-heading,
+.page-section .section-heading.h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center; /* Ensures headings are centered */
+}
+
+/* Section Subheading */
+.page-section h3.section-subheading,
+.page-section .section-subheading.h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 4rem;
+  text-align: center; /* Ensures subheadings are centered */
+}
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #212529;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color: #ffc800;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 1.5rem;
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem;
+  color: #9c9797;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ffc800;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: transparent;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.5em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand img {
+    height: 2rem;
+    transition: height 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #000000;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+  }
+  #mainNav.navbar-shrink .navbar-brand svg,
+  #mainNav.navbar-shrink .navbar-brand img {
+    height: 1.5rem;
+  }
+  #mainNav .navbar-nav .nav-item {
+    margin-right: 1rem;
+  }
+  #mainNav .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Center container styling */
+.main-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* Create Profile button styles */
+.create-profile-container {
+  margin-top: 20px;
+}
+
+.create-profile-button {
+  background-color: #47515e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.create-profile-button:hover {
+  background-color: #2d3748;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Scholar Form Popup Styles */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for better focus */
+}
+
+.popup-content {
+  background-color: #ffffff; /* Pure white for clean contrast */
+  margin: 5% auto;
+  padding: 30px; /* More spacious padding */
+  border: 1px solid #ddd; /* Lighter border for subtler look */
+  width: 90%;
+  max-width: 600px; /* Responsive max width */
+  border-radius: 15px; /* Softer, rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  animation: popup-fade-in 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+@keyframes popup-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.close-popup {
+  color: #888;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000; /* Stronger hover effect */
+  text-decoration: none;
+}
+
+form {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold; /* Highlight labels for better readability */
+}
+
+form input,
+form select,
+form textarea {
+  width: calc(100% - 20px); /* Maintain responsiveness */
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensure padding does not affect size */
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #47515e; /* Add focus indicator */
+  outline: none;
+  box-shadow: 0 0 5px rgba(71, 81, 94, 0.3); /* Subtle shadow for focus */
+}
+
+fieldset {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #47515e; /* Accent color for legends */
+  padding: 0 10px; /* Padding for cleaner look */
+}
+
+.submit-button {
+  background-color: #47515e; /* Modern button color */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background-color: #2d3748; /* Darker on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .popup-content {
+    padding: 20px;
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 10px 20px; /* Adjust button size */
+  }
+}
+
+
+
+/* Portfolio Items */
+#portfolio .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Modal Dialog Styling */
+.portfolio-modal .modal-dialog {
+  margin: 1rem auto;
+  max-width: 70vw; /* Adjust modal size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh; /* Ensures full height for vertical centering */
+}
+
+/* Modal Content Styling */
+.portfolio-modal .modal-content {
+  padding: 2rem; /* Adds spacing */
+  text-align: center; /* Centers text and elements */
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  background-color: #fff;
+}
+
+/* Title (h2) Styling */
+.portfolio-modal .modal-content h2 {
+  font-size: 2.5rem; /* Adjusts title font size */
+  font-weight: bold; /* Makes the title bold */
+  text-transform: uppercase; /* Makes text uppercase */
+  margin-bottom: 1rem; /* Adds space below the title */
+}
+
+/* Subtitle (p) Styling */
+.portfolio-modal .modal-content p {
+  font-size: 1.2rem; /* Adjusts subtitle font size */
+  font-style: italic; /* Makes subtitle italic */
+  color: grey; /* Changes subtitle color */
+  margin-bottom: 2rem; /* Adds space below the subtitle */
+}
+
+/* Bold Subtopics */
+.portfolio-modal .modal-content h4 {
+  font-weight: bold; /* Makes subtopic headings bold */
+  font-size: 1.5rem; /* Adjust font size for better visibility */
+  margin-bottom: 1rem; /* Adds space below the heading */
+  text-align: center; /* Centers the subtopic headings */
+}
+
+/* Center the Image */
+.portfolio-modal .modal-content img {
+  max-width: 40%; /* Ensures image doesn't take up too much space */
+  height: auto;
+  display: block; /* Ensures image behaves as a block element */
+  margin: 0 auto 2rem; /* Centers the image horizontally and adds space below */
+}
+
+/* Align List Content with Image Vertex */
+.portfolio-modal .modal-content ul {
+  list-style: none; /* Removes bullet points */
+  text-align: justify; /* Justifies the text */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 80%; /* Matches content width with image */
+  align-self: flex-start; /* Ensures content aligns to the left */
+}
+
+/* Individual List Items */
+.portfolio-modal .modal-content ul.list-inline li {
+  margin-bottom: 10px; /* Adds spacing between items */
+  font-size: 1.1rem;
+}
+
+/* Contact Information Links */
+.portfolio-modal .modal-content ul.list-inline li a {
+  color: #007bff; /* Adds a blue color for links */
+  text-decoration: none;
+}
+
+.portfolio-modal .modal-content ul.list-inline li a:hover {
+  text-decoration: underline;
+}
+
+/* Center the "Close Project" Button */
+.portfolio-modal .modal-content button.btn {
+  display: block; /* Ensures the button behaves as a block-level element */
+  margin: 2rem auto; /* Centers the button horizontally and adds spacing */
+  padding: 0.75rem 1.5rem; /* Adjusts button size for better visibility */
+  font-size: 1rem; /* Adjusts font size */
+  text-align: center; /* Centers the text within the button */
+  background-color: #007bff; /* Blue button color */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 0.25rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.portfolio-modal .modal-content button.btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Close Button Styling */
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+/* Footer Styling */
+.footer {
+    padding: 2rem 0;
+    background-color: white; /* Original background color */
+    text-align: center;
+    border-top: 1px solid #ccc; /* Optional border for separation */
+}
+
+/* Stack Links Vertically */
+.link-stack {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-end; /* Align to the right */
+    gap: 10px; /* Add spacing between stacked links */
+}
+
+/* Link Styling */
+.link-dark {
+    color: #000; /* Default link color */
+    font-size: 16px;
+    text-decoration: none; /* Remove underline */
+    text-align: right; /* Align text to the right */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.link-dark:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+/* Social Buttons: Arrange Vertically */
+.social-buttons {
+    display: flex;
+    flex-direction: row; /* Stack vertically */
+    justify-content: center; /* Center buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    height: 100%; /* Use the available height */
+    gap: 20px; /* Add space between buttons */
+    margin: 0 auto; /* Center the whole container */
+}
+
+/* Social Button Styling */
+.btn-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Circle size */
+    height: 50px;
+    border-radius: 50%; /* Makes buttons circular */
+    background-color: #343a40; /* Button background color */
+    color: white; /* Icon color */
+    font-size: 20px; /* Icon size */
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-social:hover {
+    background-color: #007bff; /* Hover color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
